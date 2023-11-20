@@ -39,8 +39,10 @@ const legalTxt = document.querySelector(".disclaimer");
     }
     goToSlide(currentSlide);
   };
+  if(!document.URL.includes("/") || !!document.URL.includes("index")) {
   btnLeft.addEventListener("click", prevSlide);
   btnRight.addEventListener("click", nextSlide);
+  }
   goToSlide(0);
 
 let cart = [];
