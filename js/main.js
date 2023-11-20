@@ -7,7 +7,6 @@ const navigation = document.querySelector(".navbar");
 const header = document.querySelector(".header");
 
 const legalTxt = document.querySelector(".disclaimer");
-if (document.URL.includes("index")) {
   // Slider
   const slides = document.querySelectorAll(".slide");
   const btnLeft = document.querySelector(".left_btn");
@@ -43,7 +42,6 @@ if (document.URL.includes("index")) {
   btnLeft.addEventListener("click", prevSlide);
   btnRight.addEventListener("click", nextSlide);
   goToSlide(0);
-}
 
 let cart = [];
 let counter = 0;
