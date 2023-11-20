@@ -113,9 +113,6 @@ const cartToHTML = () => {
     <h3 class="empty-cart_title">Your cart is empty</h3>
     <p class="empty-cart_text">Looks like you haven't added any items to the cart yet.</p>
     <br/>
-    <button class="btn btn-primary empty-cart_btn">
-      <a href="products.html">Go to products</a>
-    </button>
     `;
     cartList.appendChild(emptyCart);
   }
