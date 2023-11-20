@@ -7,7 +7,7 @@ const navigation = document.querySelector(".navbar");
 const header = document.querySelector(".header");
 
 const legalTxt = document.querySelector(".disclaimer");
-if (document.URL.includes("index.html")) {
+if (document.URL.includes("index")) {
   // Slider
   const slides = document.querySelectorAll(".slide");
   const btnLeft = document.querySelector(".left_btn");
@@ -51,7 +51,7 @@ const addToCart = (id) => {
   const products = JSON.parse(localStorage.getItem("products"));
   const savedCart = JSON.parse(localStorage.getItem("cart"));
   // if we are not in products page, use saved cart
-  if (!document.URL.includes("products.html")) {
+  if (!document.URL.includes("products")) {
     cart = savedCart;
   }
   const item = products.find((product) => product.id === id);
@@ -186,7 +186,7 @@ const cartToHTML = () => {
   });
 };
 
-if (document.URL.includes("products.html")) {
+if (document.URL.includes("products")) {
   fetch("../data/products.json")
     .then((response) => {
       if (!response.ok) {
