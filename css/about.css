@@ -1,0 +1,28 @@
+.about-container{
+    width: 60%;
+    margin: 0 auto;
+}
+.about-container > p{
+    margin-bottom: 20px;
+}
+.about-container > h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.about-container > h4 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+
+}
+.about-container em {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.about-container > ul {
+    list-style: circle;
+}
